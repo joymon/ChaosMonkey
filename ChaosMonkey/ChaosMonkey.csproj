@@ -40,6 +40,10 @@
       <HintPath>..\Referenced Assemblies\AWSSDK.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Administration.7.0.0.0\lib\net20\Microsoft.Web.Administration.dll</HintPath>
+    </Reference>
     <Reference Include="NDesk.Options">
       <HintPath>..\packages\NDesk.Options.0.2.1\lib\NDesk.Options.dll</HintPath>
     </Reference>
@@ -63,7 +67,7 @@
     <Compile Include="MonkeyKeeper.cs" />
     <Compile Include="MonkeyListBuilder.cs" />
     <Compile Include="Monkeys\EC2Monkey.cs" />
-    <Compile Include="Monkeys\IISServerMonkey.cs" />
+    <Compile Include="Monkeys\LocalIISServerMonkey.cs" />
     <Compile Include="Monkeys\ParentMonkey.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Tasks.cs" />

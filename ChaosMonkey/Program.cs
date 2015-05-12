@@ -30,7 +30,7 @@
                     logger.Log("Disclaimer not accepted, exiting");
                     return;
                 }
-                if (commandLineSettings.ApplicationMode.Equals("Pluggable"))
+                if (commandLineSettings.ApplicationMode == ApplicationMode.Pluggable)
                 {
                 }
                 else
@@ -41,8 +41,6 @@
                         return;
                     }
                 }
-                
-
                 Tasks.UnleashChaos(commandLineSettings.Settings, logger);
                 SaveSettingsFile(commandLineSettings.SaveSettingsFile, commandLineSettings.Settings, logger);
             }

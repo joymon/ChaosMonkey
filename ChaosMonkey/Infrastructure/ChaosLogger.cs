@@ -3,7 +3,7 @@
     using System;
     using System.IO;
 
-    public class ChaosLogger
+    public class ChaosLogger 
     {
         private readonly StreamWriter logStream;
 
@@ -19,7 +19,7 @@
             }
         }
 
-        public void Log(string message)
+        public virtual void Log(string message)
         {
             var logText = string.Concat(DateTime.Now, " - ", message);
             if (logStream != null)
